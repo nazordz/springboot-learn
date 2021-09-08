@@ -13,7 +13,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 @Entity
 @Table(name = "categories")
-public class Category implements Serializable{
+public class Category extends BaseEntity<String> implements Serializable{
     
     @Id
     @GeneratedValue(generator = "uuid4")
